@@ -18,15 +18,15 @@ for (x, y, w, h) in fa:
     result = save_model.predict(np.array([roi_gray]))
     final = np.argmax(result)
     if final == 0:
-        cv2.putText(image, "Minh",(x+10,y+h+ 30), fontface, 1, (0,255,0),2)
+        cv2.putText(image, "Phuoc",(x+10,y+h+ 30), fontface, 1, (0,255,0),2)
     if final == 1:
-        cv2.putText(image, "Khanh",(x+10,y+h+ 30), fontface, 1, (0,255,0),2)
+        cv2.putText(image, "Minh",(x+10,y+h+ 30), fontface, 1, (0,255,0),2)
     if final == 2:
-        cv2.putText(image, "Tran Thanh",(x+10,y+h+ 30), fontface, 1, (0,255,0),2)
+        cv2.putText(image, "Dat",(x+10,y+h+ 30), fontface, 1, (0,255,0),2)
     if final == 3:
-        cv2.putText(image, "Truong Giang",(x+10,y+h+ 30), fontface, 1, (0,255,0),2)
+        cv2.putText(image, "Thang",(x+10,y+h+ 30), fontface, 1, (0,255,0),2)
     if final == 4:
-        cv2.putText(image, "Quang Hai",(x+10,y+h+ 30), fontface, 1, (0,255,0),2)
+        cv2.putText(image, "Quy",(x+10,y+h+ 30), fontface, 1, (0,255,0),2)
 cv2.imshow('trainning',image)
 print(result)
 cv2.waitKey(0)
